@@ -8,7 +8,7 @@ class Queue
 	def pop(amount = 1)
 		retn_val = []
 		amount.times do
-			retn_val << self.contents.pop
+			retn_val << @contents.pop
 		end
 		if retn_val.length > 1
 			return retn_val
@@ -18,7 +18,7 @@ class Queue
 	end
 
 	def push(ar)
-		self.contents = ar + self.contents
+		@contents = ar + @contents
 		return true
 	end
 
